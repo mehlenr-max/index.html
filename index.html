@@ -1,13 +1,10 @@
-
-
-```html
 <!DOCTYPE html>
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Today — tonight or never !</title>
-<meta name="description" content="Today : l'app de rencontre minimaliste. Jeudi et samedi seulement. Un date le soir même, pas une collection de matchs.">
+<meta name="description" content="Today : l'app de rencontre minimaliste. Un date le soir même, pas une collection de matchs.">
 <style>
   :root{
     --bg:#0a0a0f;
@@ -50,28 +47,28 @@
     margin-bottom:8px;
   }
   .logo{
-    font-size:clamp(3.4rem,12vw,6.2rem);
+    font-size:clamp(3.6rem,13vw,6.6rem);
     font-weight:800;
-    letter-spacing:-.04em;
-    line-height:0.9;
+    letter-spacing:-.05em;
+    line-height:0.85;
+    font-style:italic;
   }
-  .logo .to{color:#fff}
-  .logo .day{color:var(--pink)}
+  .logo .to{
+    background:linear-gradient(135deg,#fff 30%,#ff8ab5 100%);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    background-clip:text;
+  }
+  .logo .day{
+    color:var(--pink);
+  }
   .slogan{
     font-size:clamp(1.05rem,3.2vw,1.35rem);
     font-weight:600;
     color:var(--pink);
     font-style:italic;
-    margin-top:-2px;
-    letter-spacing:-.01em;
-  }
-  .days{
-    margin-top:10px;
-    font-size:0.95rem;
-    font-weight:700;
-    color:var(--pink);
-    letter-spacing:.04em;
-    text-transform:uppercase;
+    margin-top:-4px;
+    letter-spacing:-.02em;
   }
   .tagline{
     font-size:clamp(1.15rem,3.4vw,1.5rem);
@@ -166,7 +163,6 @@
   <div class="logo-block">
     <div class="logo"><span class="to">To</span><span class="day">Day</span></div>
     <div class="slogan">tonight or never !</div>
-    <div class="days">Jeudis & Samedis</div>
   </div>
   <div class="tagline">Un date le <em>jeudi</em> ou le <em>samedi</em>.<br>Pour le soir même.</div>
   <p class="sub">Pas une collection de matchs. Juste un vrai rendez-vous, aujourd’hui.</p>
@@ -258,4 +254,3 @@
 </div>
 </body>
 </html>
-```
